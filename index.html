@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090707">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Tunnel of Unmentionable Desires</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="tunnel.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="card" aria-live="polite">
+      <div class="sigil" aria-hidden="true">
+        <span class="sigil-ring"></span>
+        <span class="sigil-eye">◆</span>
+      </div>
+
+      <div id="entryView">
+        <p class="eyebrow">CARNEVIL PRESENTS</p>
+        <h1>The Tunnel of<br><span>Unmentionable Desires</span></h1>
+        <p class="invitation" id="stagePrompt">The tunnel knows what you want.</p>
+
+        <form id="nameForm" autocomplete="off" novalidate>
+          <label for="characterName">Enter your character's first name</label>
+          <input
+            id="characterName"
+            name="characterName"
+            type="text"
+            inputmode="text"
+            autocomplete="off"
+            autocapitalize="words"
+            spellcheck="false"
+            maxlength="40"
+            required
+          >
+          <button type="submit">Enter</button>
+        </form>
+
+        <div id="errorMessage" class="error" role="alert" hidden>
+          <strong>The tunnel does not know that name.</strong>
+          <span>Or perhaps you have forgotten your own.</span>
+          <button id="tryAgain" class="text-button" type="button">Try again</button>
+        </div>
+      </div>
+
+      <div id="experienceView" class="experience" hidden>
+        <p class="eyebrow" id="experienceLabel">THE TUNNEL SPEAKS</p>
+        <div class="divider" aria-hidden="true">◆</div>
+        <p id="experienceText" class="experience-text"></p>
+        <div class="divider bottom" aria-hidden="true">◆</div>
+        <button id="returnButton" class="text-button" type="button">Leave this vision</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
